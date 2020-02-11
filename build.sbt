@@ -15,4 +15,6 @@ libraryDependencies ++= Seq(
   "org.easytesting" % "fest-assert" % "1.4" % "test"
 )
 
+crossPaths := false
+
 publishTo := sonatypePublishToBundle.value
