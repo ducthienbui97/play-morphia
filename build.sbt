@@ -1,16 +1,18 @@
 name := """play-morphia"""
-organization := "it.unifi.cerm"
+organization := "io.github.ducthienbui97"
 
 description := "Play 2.7.x Module for Morphia http://mongodb.github.io/morphia/"
 
-version := "1.0"
+version := "1.0-2.7-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 scalaVersion := "2.12.8"
 
 libraryDependencies ++= Seq(
-"org.mongodb" % "mongo-java-driver" % "3.9.1",
-"xyz.morphia.morphia" % "core" % "1.4.0",
-"org.easytesting" % "fest-assert" % "1.4" % "test"
-) 
+  "org.mongodb" % "mongo-java-driver" % "3.12.0",
+  "dev.morphia.morphia" % "core" % "1.5.8",
+  "org.easytesting" % "fest-assert" % "1.4" % "test"
+)
+
+publishTo := sonatypePublishToBundle.value
