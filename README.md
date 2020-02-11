@@ -15,7 +15,7 @@ Add the following to your build.sbt:
         guice,
         "org.mongodb" % "mongo-java-driver" % "3.12.0",
         "dev.morphia.morphia" % "core" % "1.5.8",
-        "io.github.ducthienbui97" %% "play-morphia" % "{version}"
+        "io.github.ducthienbui97" % "play-morphia" % "{version}"
     )
 
 
