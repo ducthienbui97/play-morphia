@@ -1,22 +1,28 @@
-PlayMorphia Play 2.7.x Module
+PlayMorphia Play 2.8.x Module
 =====================================
 
-This is a Play 2.7.x Module for [Morphia](https://github.com/MorphiaOrg/morphia)
+This is a Play 2.7.x, 2.8.x Module for [Morphia](https://github.com/MorphiaOrg/morphia)
 (a MongoDB Java driver wrapper).
 
 Installation
 -----------
 
 Add the following to your build.sbt:
+    
+    resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 
     libraryDependencies ++= Seq(
         guice,
         "org.mongodb" % "mongo-java-driver" % "3.12.0",
         "dev.morphia.morphia" % "core" % "1.5.8",
-        )
+        "io.github.ducthienbui97" %% "play-morphia" % "{version}"
+    )
 
 
-Create a `lib` folder in your project directory and copy play-morphia.jar inside.
+| Play version | Play-morphia version  |
+|---|---|
+|  2.7.x | 1.0-2.7-SNAPSHOT |
+|  2.8.x | 1.0-2.8-SNAPSHOT |
 
 You will need to specify your MongoDB configuration in the `conf/application.conf`file:
 
