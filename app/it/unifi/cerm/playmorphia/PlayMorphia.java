@@ -3,6 +3,7 @@ package it.unifi.cerm.playmorphia;
 
 import com.mongodb.MongoClient;
 import com.typesafe.config.Config;
+import dev.morphia.ValidationExtension;
 import play.Environment;
 import play.inject.ApplicationLifecycle;
 import dev.morphia.Datastore;
@@ -62,6 +63,7 @@ public class PlayMorphia {
         datastore = morphia.createDatastore(
                 mongo, factory.getDBName());
 
+        new ValidationExtension(morphia);
     }
 
     @SuppressWarnings({ "rawtypes", "unchecked" })

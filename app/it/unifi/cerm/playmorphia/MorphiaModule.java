@@ -11,6 +11,7 @@ import java.util.List;
  * Created by morelli on 21/02/19.
  */
 public class MorphiaModule extends play.inject.Module {
+    @Override
     public List<Binding<?>> bindings(Environment environment, Config config) {
         return Collections.singletonList(
                 bindClass(PlayMorphia.class).toSelf()
