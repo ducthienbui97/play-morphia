@@ -21,8 +21,8 @@ Add the following to your build.sbt:
 
 | Play version | Play-morphia version  |
 |---|---|
-|  2.7.x | 1.0-2.7-SNAPSHOT |
-|  2.8.x | 1.0-2.8-SNAPSHOT |
+|  2.7.x | 1.0.2-2.7 |
+|  2.8.x | 1.0.2-2.8 |
 
 You will need to specify your MongoDB configuration in the `conf/application.conf`file:
 
