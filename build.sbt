@@ -3,7 +3,7 @@ organization := "io.github.ducthienbui97"
 
 description := "Play 2.7.x Module for Morphia http://mongodb.github.io/morphia/"
 
-version := "1.0-2.7-SNAPSHOT"
+version := "1.1-2.7-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
